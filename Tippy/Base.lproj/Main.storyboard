@@ -85,6 +85,7 @@
                     <navigationItem key="navigationItem" title="Tips" id="7w2-qX-gE0"/>
                     <connections>
                         <outlet property="billField" destination="cKY-UV-7AD" id="rch-og-dTu"/>
+                        <outlet property="tipControl" destination="umL-21-9pS" id="CBz-6i-55e"/>
                         <outlet property="tipLabel" destination="0aP-cO-Htz" id="Qpe-gQ-2BP"/>
                         <outlet property="totalLabel" destination="wDc-U7-3qg" id="czX-hC-ady"/>
                     </connections>

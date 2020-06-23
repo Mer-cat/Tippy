@@ -12,6 +12,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *billField;
 @property (weak, nonatomic) IBOutlet UILabel *tipLabel;
 @property (weak, nonatomic) IBOutlet UILabel *totalLabel;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *tipControl;
 
 @end
 
@@ -30,14 +31,22 @@
 }
 
 - (IBAction)onEdit:(id)sender {
-    
+
     // to calculate the tip based on the bill
     double bill = [self.billField.text doubleValue];
-    double tip = 0.2 * bill;
+    
+    //array of possible tips
+    NSArray *percentages = @[@0.15, @0.2, @0.22];
+    
+    //acquire chosen tip percentage, and unwrap the NSNumber into a double value
+    double tipPercentage = [percentages[self.tipControl.selectedSegmentIndex] doubleValue];
+    
+    double tip = tipPercentage * bill;
     double total = bill + tip;
     
-    self.tipLabel.text = [NSString stringWithFormat:@"$%f", tip];
-    self.totalLabel.text = [NSString stringWithFormat:@"$%f", total];;
+    // %.2f will make sure only two decimal places are displayed
+    self.tipLabel.text = [NSString stringWithFormat:@"$%.2f", tip];
+    self.totalLabel.text = [NSString stringWithFormat:@"$%.2f", total];;
 }
 
 @end

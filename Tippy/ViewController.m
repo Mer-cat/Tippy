@@ -30,8 +30,14 @@
 }
 
 - (IBAction)onEdit:(id)sender {
-    self.tipLabel.text = @"$10.00";
-    self.totalLabel.text = @"$10.00";
+    
+    // to calculate the tip based on the bill
+    double bill = [self.billField.text doubleValue];
+    double tip = 0.2 * bill;
+    double total = bill + tip;
+    
+    self.tipLabel.text = [NSString stringWithFormat:@"$%f", tip];
+    self.totalLabel.text = [NSString stringWithFormat:@"$%f", total];;
 }
 
 @end

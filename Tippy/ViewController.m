@@ -49,4 +49,24 @@
     self.totalLabel.text = [NSString stringWithFormat:@"$%.2f", total];;
 }
 
+- (IBAction)onEditingBegin:(id)sender {
+    
+    //animate moving of the bill field
+    [UIView animateWithDuration:0.2 animations:^{
+        self.billField.frame = CGRectMake(self.billField.frame.origin.x, self.billField.frame.origin.y + 30, self.billField.frame.size.width, self.billField.frame.size.height);
+    }];
+}
+
+- (IBAction)onEditingEnd:(id)sender {
+    CGRect newFrame = self.billField.frame;
+    newFrame.origin.y -= 30;
+    
+    //animates the moving back of the bill field
+    [UIView animateWithDuration:0.2 animations:^{
+        //assign new frame to update position of the bill field
+        self.billField.frame = newFrame;
+    }];
+    
+}
+
 @end

@@ -22,7 +22,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ X ] Improvements in UI to make the app more pleasing to eye
+- [X] Improvements in UI to make the app more pleasing to eye
 
 ## Video Walkthrough
 

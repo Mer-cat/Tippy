@@ -27,7 +27,8 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-<img src='hhttps://gifyu.com/image/uDwA.gif' title='Tippy App Walkthrough' width='' alt='Video Walkthrough' />
+![Alt Text](https://gifyu.com/image/uDwA.gif)
+<img src='https://gifyu.com/image/uDwA.gif' title='Tippy App Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 

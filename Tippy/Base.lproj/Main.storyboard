@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tips-->
+        <!--Tippy-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -87,7 +87,13 @@
                             <outletCollection property="gestureRecognizers" destination="aWg-YG-Zg3" appends="YES" id="4UJ-KI-SmF"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Tips" id="7w2-qX-gE0"/>
+                    <navigationItem key="navigationItem" title="Tippy" id="7w2-qX-gE0">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="mwG-PM-FAc">
+                            <connections>
+                                <segue destination="Umd-uI-z9o" kind="show" id="vi0-GG-Ccj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="billField" destination="cKY-UV-7AD" id="rch-og-dTu"/>
                         <outlet property="tipControl" destination="umL-21-9pS" id="CBz-6i-55e"/>
@@ -103,6 +109,47 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="l5d-Le-3U3">
+            <objects>
+                <viewController id="Umd-uI-z9o" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cvh-Nf-0jP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Default Tip Percentage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCZ-yT-UeQ">
+                                <rect key="frame" x="55" y="114" width="304" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hcQ-tC-qEQ">
+                                <rect key="frame" x="25" y="184" width="365" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="15%"/>
+                                    <segment title="20%"/>
+                                    <segment title="22%"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="changeTipDefault:" destination="Umd-uI-z9o" eventType="valueChanged" id="jV6-5Y-zIC"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="hvi-t1-JLP"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WvU-Ch-mby"/>
+                    <connections>
+                        <outlet property="tipDefault" destination="hcQ-tC-qEQ" id="cXi-8y-6DY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oZv-I6-4Gt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1863.7681159420292" y="137.94642857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="C9d-Zh-5Dt">

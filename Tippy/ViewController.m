@@ -21,6 +21,55 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.title = @"Tip Calculator";
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    //load in default tip percentage
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSInteger defaultTipPercentage = [defaults integerForKey:@"default_tip_percentage"];
+    
+    //selects segment corresponding to default tip percentage set by user
+   self.tipControl.selectedSegmentIndex = defaultTipPercentage;
+
+    //make sure bill is recalculated to reflect default settings
+    // to calculate the tip based on the bill
+    double bill = [self.billField.text doubleValue];
+    
+    //array of possible tips
+    NSArray *percentages = @[@0.15, @0.2, @0.22];
+    
+    //acquire chosen tip percentage, and unwrap the NSNumber into a double value
+    double tipPercentage = [percentages[self.tipControl.selectedSegmentIndex] doubleValue];
+    
+    double tip = tipPercentage * bill;
+    double total = bill + tip;
+    
+    // %.2f will make sure only two decimal places are displayed
+    self.tipLabel.text = [NSString stringWithFormat:@"$%.2f", tip];
+    self.totalLabel.text = [NSString stringWithFormat:@"$%.2f", total];;
+    NSLog(@"View will appear");
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+
+    NSLog(@"View did appear");
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+
+    NSLog(@"View will disappear");
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+
+    NSLog(@"View did disappear");
 }
 
 - (IBAction)onTap:(id)sender {

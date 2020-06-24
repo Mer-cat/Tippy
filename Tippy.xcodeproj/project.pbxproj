@@ -16,6 +16,7 @@
 		D44A814D24A29C10002CB55B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D44A814C24A29C10002CB55B /* main.m */; };
 		D44A815724A29C10002CB55B /* TippyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D44A815624A29C10002CB55B /* TippyTests.m */; };
 		D44A816224A29C10002CB55B /* TippyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D44A816124A29C10002CB55B /* TippyUITests.m */; };
+		D44A817124A2E90D002CB55B /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D44A817024A2E90D002CB55B /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		D44A815D24A29C10002CB55B /* TippyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TippyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D44A816124A29C10002CB55B /* TippyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TippyUITests.m; sourceTree = "<group>"; };
 		D44A816324A29C10002CB55B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D44A816F24A2E90D002CB55B /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		D44A817024A2E90D002CB55B /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 				D44A814024A29C0E002CB55B /* ViewController.h */,
 				D44A814124A29C0E002CB55B /* ViewController.m */,
 				D44A814324A29C0E002CB55B /* Main.storyboard */,
+				D44A816F24A2E90D002CB55B /* SettingsViewController.h */,
+				D44A817024A2E90D002CB55B /* SettingsViewController.m */,
 				D44A814624A29C10002CB55B /* Assets.xcassets */,
 				D44A814824A29C10002CB55B /* LaunchScreen.storyboard */,
 				D44A814B24A29C10002CB55B /* Info.plist */,
@@ -269,6 +274,7 @@
 			files = (
 				D44A814224A29C0E002CB55B /* ViewController.m in Sources */,
 				D44A813C24A29C0E002CB55B /* AppDelegate.m in Sources */,
+				D44A817124A2E90D002CB55B /* SettingsViewController.m in Sources */,
 				D44A814D24A29C10002CB55B /* main.m in Sources */,
 				D44A813F24A29C0E002CB55B /* SceneDelegate.m in Sources */,
 			);

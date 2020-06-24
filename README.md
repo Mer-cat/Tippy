@@ -33,7 +33,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+I had difficulty resizing the segmented tip selector bar, but found a way to code in the resize of its height to improve user experience. Making the settings page also presented challenges, but I learned more about using Xcode in the process.
 
 ## Credits
 

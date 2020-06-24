@@ -14,7 +14,7 @@ The following **required** functionality is complete:
 
 The following **optional** features are implemented:
 
-* [ ] Settings page to change the default tip percentage.
+* [X] Settings page to change the default tip percentage.
 * [ ] UI animations
 * [ ] Remembering the bill amount across app restarts (if <10mins)
 * [ ] Using locale-specific currency and currency thousands separators.
@@ -22,12 +22,12 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [ X ] Improvements in UI to make the app more pleasing to eye
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/a/Lb21hfG' title='Tippy Demo' width='' alt='VTippy Demo' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
@@ -39,11 +39,11 @@ Describe any challenges encountered while building the app.
 
 List an 3rd party libraries, icons, graphics, or other assets you used in your app.
 
-- [AFNetworking](https://github.com/AFNetworking/AFNetworking) - networking task library
+- None
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2020] [Mercy Bickell]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

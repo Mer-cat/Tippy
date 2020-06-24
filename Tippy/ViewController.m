@@ -22,7 +22,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.title = @"Tip Calculator";
+    //change title on navigator bar
+    self.title = @"Tippy";
+    
+    //change height of tip segmented bar
+    CGRect frame = self.tipControl.frame;
+    [self.tipControl setFrame:CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, 56)];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {

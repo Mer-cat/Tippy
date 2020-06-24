@@ -18,6 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    //change height of tip segmented bar
+    CGRect frame = self.tipDefault.frame;
+    [self.tipDefault setFrame:CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, 56)];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

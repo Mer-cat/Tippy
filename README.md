@@ -27,7 +27,7 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-<img src='https://imgur.com/hokkaUR' title='Tippy Demo' width='' alt='Tippy Demo' />
+<img src='https://gifyu.com/image/uDwA' title='Tippy Demo' width='' alt='Tippy Demo' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
